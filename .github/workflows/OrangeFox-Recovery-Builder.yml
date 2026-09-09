@@ -118,7 +118,6 @@ jobs:
     - name: Building OrangeFox
       run: |
         cd ${GITHUB_WORKSPACE}/OrangeFox/fox_${{ github.event.inputs.MANIFEST_BRANCH }}
-          export OF_DISABLE_MIUI_SPECIFIC_FEATURES=1
           export OF_FORCE_PREBUILT_KERNEL=1
           export OF_MAINTAINER="ETHICAL ∆ TITAN"
           export FOX_MAINTAINER_PATCH_VERSION=3
