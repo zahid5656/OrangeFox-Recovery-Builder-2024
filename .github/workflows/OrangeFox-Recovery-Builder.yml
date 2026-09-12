@@ -118,6 +118,7 @@ jobs:
     - name: Building OrangeFox
       run: |
         cd ${GITHUB_WORKSPACE}/OrangeFox/fox_${{ github.event.inputs.MANIFEST_BRANCH }}
+        export TARGET_DEVICE_ALT="RMX1931,RMX1931L1,RMX1931CN"
         set +e
         source build/envsetup.sh
         export ALLOW_MISSING_DEPENDENCIES=true
